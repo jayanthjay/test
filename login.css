@@ -1,0 +1,77 @@
+
+
+
+body {
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv/0afe995a-cb1b-44b4-9c4e-b23540e4f2e1/69b9d4f3-6c62-48a5-bdc3-3a67ad554c04/perspective_alpha_small.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-signin {
+    max-width: 260px;
+    max-height: 400px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.form-signin:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.form-signin-heading,
+.checkbox {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: red;
+}
+
+.checkbox {
+    font-weight: normal;
+    font-size: 10px;
+
+}
+
+input[type="checkbox"] {
+    zoom:0.8;
+    align:right;
+    margin-left: 100%;
+}
+
+#login {
+    font-size: 10px;
+    width:100px;
+    align:center !important;
+    border:0px;
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+.form-control {
+    position: relative;
+    font-size: 8px;
+    height: auto;
+    padding: 6px;
+}
+
+
+
+input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+

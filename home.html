@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="movieflix">
+
+<head  ng-controller="MainController">
+    <meta charset="utf-8">
+    <title> {{mVm.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="home"><a href="#">Movieflix
+            <!--<i class="fa fa-film fa-2x" aria-hidden="true"></i>-->
+            <span class="glyphicon glyphicon-film"></span></a>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse
+                    <span class="caret"></span></a>
+                <div class="dropdown-menu multi-column">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="dropdown-menu">
+                                <li><a href="#/TvShows">TV Shows</a></li>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Thriller</a></li>
+                                <li><a href="#">Dramas</a></li>
+                                <li><a href="#">Sci-Fi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Documentaries</a></li>
+                                <li><a href="#">Dramas</a></li>
+                                <li><a href="#">Indian</a></li>
+                                <li><a href="#">Comedy</a></li>
+                                <li><a href="#">Stand-up & Talk shows</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My List</a></li>
+                                <li><a href="#">New Arrivals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="profile" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jayanth <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Manage Profiles</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+            </li>
+
+            <li id="bell"><a href="#"> <span class="glyphicon glyphicon-bell"></a></li>
+
+            <li id="search">
+                <form role="form"  class="col-xs-9">
+                    <div class="form-group">
+                        <input type="search" class="form-control"  placeholder="Search" id="search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+
+<div class="container">
+    <div class="col-md-12">
+        <br>
+        <br>
+        <h1>Trending Now</h1>
+
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x"><img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x"><img src="http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMTYwOTEzMDMzMl5BMl5BanBnXkFtZTgwNzExODIzNzE@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMTk1MjI1NjI0MV5BMl5BanBnXkFtZTcwODQ5MzA3Mw@@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMjI1Mzc4MDUwNl5BMl5BanBnXkFtZTgwMDAzOTIxMjE@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BNTA2MTE1NDI5OV5BMl5BanBnXkFtZTcwNzM2MzU3Nw@@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMTAzZmJiOGQtOWM3NS00MDEwLWJiNGEtN2QzMDM3NDJjMWQwXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMTMyOTg0ODQ1OF5BMl5BanBnXkFtZTcwNjc0NTMwNQ@@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://ia.media-imdb.com/images/M/MV5BMTY4ODM0OTc2M15BMl5BanBnXkFtZTcwNzE0MTk3OA@@._V1_SX300.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://code.angularjs.org/1.4.9/angular.js" ></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="movies.service.js"></script>
+<script src="main.controller.js"></script>
+<script src="movies.controller.js"></script>
+</body>
+
+</html>
